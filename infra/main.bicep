@@ -26,7 +26,7 @@ param webServiceName string = ''
 param guidValue string = newGuid()
 
 #disable-next-line no-unused-params
-param dateInfo string = utcNow('ddMM')
+param dateInfo string = utcNow('dd')
 
 
 @description('Id of the user or app to assign application roles')
@@ -95,7 +95,7 @@ module keyVault 'br/public:avm/res/key-vault/vault:0.3.5' = {
   name: 'keyvault'
   scope: resourceGroup(resourceGroupName)
   params: {
-    name: !empty(keyVaultName) ? keyVaultName : '${abbrs.keyVaultVaults}0${resourceToken}'
+    name: !empty(keyVaultName) ? keyVaultName : '${abbrs.keyVaultVaults}086${resourceToken}'
     location: location
     tags: tags
     // Add keyvault secret
