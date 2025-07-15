@@ -95,7 +95,7 @@ module keyVault 'br/public:avm/res/key-vault/vault:0.3.5' = {
   name: 'keyvault'
   scope: resourceGroup(resourceGroupName)
   params: {
-    name: !empty(keyVaultName) ? keyVaultName : '${abbrs.keyVaultVaults}${resourceToken}'
+    name: !empty(keyVaultName) ? keyVaultName : '${abbrs.keyVaultVaults}0${resourceToken}'
     location: location
     tags: tags
     // Add keyvault secret
