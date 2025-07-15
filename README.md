@@ -106,4 +106,4 @@ Configure the repostory variables and secret in Github Actions. The secrets and 
 
 ## Known Issues
 
-- Getting failed during Access Policies configuration in Azure Key Vault. The error mentioned that the existing Key Vault exists in the same region.
+- Getting failed during Access Policies configuration in Azure Key Vault. The error mentioned that the Key Vault with the same name exists in the same region.
