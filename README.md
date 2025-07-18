@@ -38,6 +38,7 @@ azd auth login --use-device-code --no-prompt
 azd up
 
 # Cleanup resources
+#
 azd down --purge --force
 ```
 
